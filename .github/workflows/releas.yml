@@ -31,7 +31,6 @@ jobs:
         with:
           draft: false
           prerelease: false
-          release_name: ${{ steps.version.outputs.git-version }}
           tag_name: ${{ github.ref }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
